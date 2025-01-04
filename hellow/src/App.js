@@ -12,7 +12,7 @@ import Hook from './Components/Hooks';
 import Spread from './Components/SpredOpertor';
 import PrevousHook from './Components/previousState';
 import NameChanger from './Components/realTimenameChanger';
-
+import DATA from './Components/practical1/practical1';
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
      <PrevousHook/>
 
      <NameChanger/>
-
+     <DATA/>
   </div>
   );
 }

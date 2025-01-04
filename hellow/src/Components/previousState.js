@@ -9,11 +9,18 @@ function PrevousHook ()
     
     setCount(initialState);
   }
-  const increase = () =>{
-    setCount(Count + 1);
-  }
+  //in this part when you click button constantly count increase only by one
+     const clickHandle = () =>{
+      setTimeout(() =>{
+        console.log(Count);
+          setCount(Count + 1);
+      },3000);
+     }
+  //solution for (in this part when you click button constantly count increase only by one)   
   const decrease =() =>{
-    setCount(Count - 1);
+    setTimeout(() =>{
+      setCount((prev) => prev - 1);
+    },3000)
   }
 
   return (
@@ -30,7 +37,7 @@ function PrevousHook ()
         border: '1px solid black',
         padding: '7px 10px',
       
-      }} onClick={increase}>+</button>
+      }} onClick={clickHandle}>+</button>
       <button style={{
         fontSize:'10px',
         border: '1px solid black',

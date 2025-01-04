@@ -11,6 +11,7 @@ import { Data1,Data2 } from './Components/export';
 import Hook from './Components/Hooks';
 import Spread from './Components/SpredOpertor';
 import PrevousHook from './Components/previousState';
+import NameChanger from './Components/realTimenameChanger';
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
      <Spread />
 
      <PrevousHook/>
+
+     <NameChanger/>
 
   </div>
   );

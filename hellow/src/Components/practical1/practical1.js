@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './practical1.css';
 import Units from "./Units";
+import NavBar from './practical2/NavBar';
 
 function Data() {
     const [img, setimg] = useState("");
@@ -13,8 +14,10 @@ function Data() {
     console.log(data);
     return (
         <div>
+            
             <form style={{ backgroundColor: 'yellow' }} onSubmit={(e) => e.preventDefault()}>
                 <h1>This is practical1</h1>
+                <NavBar/>
              <div className="centerContainer">
              <input placeholder=" Enter image url"
                     style={{ border: '1px solid black' }}

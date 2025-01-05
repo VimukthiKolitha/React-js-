@@ -1,0 +1,42 @@
+.navHead {
+    height: 38vh;
+    float: right;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: bisque;
+    padding: 10px 20px;
+  }
+  
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transition: all 400ms ease-in;
+    
+  }
+  .img{
+      width: 40px;
+      height: 40px;
+     margin-top: 10px;
+     cursor: pointer;
+  }
+  .navList{
+   display: flex;
+   gap: 10px;
+   background-color: aqua;
+
+  }
+  .LS{
+    cursor: pointer;
+    background-color: blue;
+    border: 2px solid black;
+  }
+  
+  @media only screen and (min-width: 768px){
+    .navHead,.nav,.img{
+      display: none;
+    }
+  }

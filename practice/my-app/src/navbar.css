@@ -1,0 +1,106 @@
+/* HEADER STYLES */
+/* Style the header container to span the full width and have a background color */
+.header {
+    width: 100%; /* Full width */
+    background-color: darkmagenta; /* Dark magenta background */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Space between child elements */
+    padding: 10px; /* Padding inside the header */
+  }
+  
+  /* MENU ICON */
+  /* Style for the hamburger menu icon */
+  .menu {
+    width: 40px; /* Width of the icon */
+    height: 30px; /* Height of the icon */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: none; /* Hidden by default (visible only on small screens) */
+  }
+  
+  /* CLOSE ICON */
+  /* Style for the close button inside the menu */
+  .close {
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* NAVIGATION MENU */
+  /* Navigation menu (hidden by default on small screens) */
+  .ul {
+    display: none; /* Hide menu by default */
+    list-style-type: none; /* Remove bullet points from the list */
+    background-color: coral; /* Coral background color */
+    padding: 10px; /* Padding around the menu */
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 50px; /* Position below the header */
+    right: 10px; /* Align the menu to the right */
+    width: 200px; /* Fixed width for the menu */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  /* Style for individual navigation items */
+  .ul li {
+    padding: 10px 0; /* Add vertical padding to each list item */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Hover effect for menu items */
+  .ul li:hover {
+    background-color: lightcoral; /* Change background color on hover */
+  }
+  
+  /* SHOW MENU */
+  /* Display the menu when the "show" class is added */
+  .ul.show {
+    display: block; /* Make the menu visible */
+  }
+  
+  /* MEDIA QUERY FOR SMALL SCREENS */
+  /* Styles applied only when the screen width is 768px or less */
+  @media (max-width: 768px) {
+    .menu {
+      display: block; /* Show the menu icon on small screens */
+    }
+  
+    .ul {
+      display: none; /* Keep the menu hidden by default */
+    }
+  }
+  
+  /* MEDIA QUERY FOR LARGE SCREENS */
+  /* Styles applied when the screen width is larger than 768px */
+  @media (min-width: 769px) {
+    /* On larger screens, display the menu inline */
+    .ul {
+      display: flex; /* Flexbox layout for horizontal alignment */
+      position: static; /* Reset position (no absolute positioning) */
+      background-color: transparent; /* No background color */
+      box-shadow: none; /* Remove the shadow effect */
+      height: auto; /* Adjust height to content */
+      float: none; /* Reset float property */
+      padding: 0; /* Remove padding */
+      margin: 0; /* Remove margin */
+
+      
+    }
+  
+    /* Style for individual menu items on large screens */
+    .ul li {
+      padding: 0 15px; /* Add horizontal spacing between items */
+      color: white; /* Set text color to white */
+    }
+  
+    /* Hide the close icon on larger screens */
+    .close {
+      display: none;
+    }
+  
+    /* Hide the menu icon on larger screens */
+    .menu {
+      display: none;
+    }
+  }
+  

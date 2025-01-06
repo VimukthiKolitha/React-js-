@@ -1,0 +1,20 @@
+.name,.imageUrl,.age{
+  background-color:bisque;
+  width: 25%;
+  height: 10%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.full{
+  background-color: black;
+}
+.submit{
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 50px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: chartreuse;
+  padding: 5px;
+}

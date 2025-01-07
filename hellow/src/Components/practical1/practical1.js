@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './practical1.css';
 import Units from "./Units";
 import NavBar from './practical2/NavBar';
@@ -10,11 +10,34 @@ function Data() {
     const [coutry, setcountry] = useState(""); 
     //create an array in use state
     const [data,setdata] = useState([]);
+    //use efect to window size
+    const [windowWidth,setwindow] = useState(window.innerWidth);
+   // console.log(data);
+    //using use effect
+    useEffect(()=>{
+      console.log('using use effect');
+    },[data])
 
-    console.log(data);
+    //window size
+    useEffect(()=>{
+        const changingWith = () =>{
+            setwindow(window.innerWidth);
+        };
+        window.addEventListener('resize',changingWith);
+        console.log('use effect calling');
+
+        //run only one time (after change the state this function clear previos thigs)
+        //cleanup proccess
+        return () =>{
+            window.removeEventListener('reset',changingWith);
+            console.log('use effect clean up function');
+        }
+    });
+       
+
     return (
         <div>
-            
+            <h1>{windowWidth}</h1>
             <form style={{ backgroundColor: 'yellow' }} onSubmit={(e) => e.preventDefault()}>
                 <h1>This is practical1</h1>
                 <NavBar/>

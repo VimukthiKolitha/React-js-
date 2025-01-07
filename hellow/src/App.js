@@ -13,7 +13,7 @@ import Spread from './Components/SpredOpertor';
 import PrevousHook from './Components/previousState';
 import NameChanger from './Components/realTimenameChanger';
 import DATA from './Components/practical1/practical1';
-
+import UseEffect from './Components/useEffectPractice/UseEffect'
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
 
      <NameChanger/>
      <DATA/>
+     <UseEffect/>
   </div>
   );
 }

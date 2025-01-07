@@ -6,7 +6,7 @@ import contact from './imges/contact-headset-communication-svgrepo-com.svg';
 import projects from './imges/projects-svgrepo-com.svg';
 import close from './imges/close-circle-svgrepo-com.svg';
 import About from '../about';
-import { Link } from 'react-router-dom';
+
 function NavBar() {
 
     const [menuClick,setmenuClick] = useState(false);

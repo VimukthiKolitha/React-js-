@@ -14,6 +14,7 @@ import PrevousHook from './Components/previousState';
 import NameChanger from './Components/realTimenameChanger';
 import DATA from './Components/practical1/practical1';
 import UseEffect from './Components/useEffectPractice/UseEffect'
+import Main1 from './Components/Router-dom.js/Main';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
      <NameChanger/>
      <DATA/>
      <UseEffect/>
+     <Main1/>
   </div>
   );
 }

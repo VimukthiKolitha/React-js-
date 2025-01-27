@@ -13,7 +13,9 @@ function EffectHook() {
     }
     //every time something change use effect will be work
     useEffect(()=>{
-        document.title = `you click ${count} times` //when click test btn this will set 'title as you click ${count} times'
+      document.title = `you click ${count} times` //when click test btn this will set 'title as you click ${count} times'
+
+      //this is called dependancy array
     },[count]);
   return (
     <div>
